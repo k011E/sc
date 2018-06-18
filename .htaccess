@@ -1,0 +1,7 @@
+AddDefaultCharset uft-8
+RewriteEngine On
+RewriteRule ^admin/?$ modules/admin/index.php [L,QSA]
+RewriteRule ^admin/auth/?$ modules/admin/auth.php [L,QSA]
+RewriteRule ^admin/exit/?$ modules/admin/exit.php [L,QSA]
+RewriteRule ^admin/services/?$ modules/admin/services/index.php [L,QSA]
+RewriteRule ^admin/services/add/?$ modules/admin/services/add.php [L,QSA]

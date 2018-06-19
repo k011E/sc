@@ -14,4 +14,8 @@ function auth(){
 		header('location:/admin/auth');
 	}
 }
+
+function convDate($time){
+	return date("d.m.o G:i", $time);
+}
 ?>

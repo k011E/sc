@@ -15,7 +15,15 @@ function auth(){
 	}
 }
 
+function authWorker(){
+	global $user;
+	if(!isset($user['id'])){
+		header('location:/worker_space/auth');
+	}
+}
+
 function convDate($time){
+	date_default_timezone_set('Europe/Saratov');
 	return date("d.m.o G:i", $time);
 }
 ?>

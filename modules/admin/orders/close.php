@@ -11,7 +11,7 @@ $order = $query->fetch_assoc();
 if(isset($_POST['no'])){
 	header('location:/admin/orders');
 }elseif(isset($_POST['yes'])){
-	$db->query("UPDATE `orders` SET `status`=1 WHERE `id`='".$_GET['id']."'");
+	$db->query("UPDATE `orders` SET `status`=2 WHERE `id`='".$_GET['id']."'");
 	header('location:/admin/orders');
 }
 ?>
